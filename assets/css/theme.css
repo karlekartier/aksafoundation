@@ -1,0 +1,190 @@
+:root {
+    --primary-bg: #f8fafc;
+    --card-radius: 12px;
+    --brand-color: #ea6020;
+}
+
+body {
+    font-family: 'Lexend', sans-serif;
+    background-color: var(--primary-bg);
+    color: #334155;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Figtree', sans-serif;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+/* ---------------------------------
+   BRAND BUTTONS & COLORS 
+-----------------------------------*/
+.btn-primary {
+    background-color: #ea6020 !important;
+    color: #ffffff !important;
+    border-color: #ea6020 !important;
+    transition: 0.5s;
+}
+
+.btn-primary:hover {
+    background-color: #cf541c !important;
+    border-color: #cf541c !important;
+}
+
+.text-primary {
+    color: #ea6020 !important;
+}
+
+.border-primary {
+    border-color: #ea6020 !important;
+}
+
+/* ---------------------------------
+   NAVIGATION
+-----------------------------------*/
+.navbar-sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+    background: rgba(255, 255, 255, 0.85) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.nav-link {
+    font-weight: 500;
+    color: #475569 !important;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--brand-color) !important;
+}
+
+/* ---------------------------------
+   BENTO GRID CARDS
+-----------------------------------*/
+.bento-card {
+    background: #ffffff;
+    border-radius: var(--card-radius);
+    padding: 2rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0,0,0,0.02);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.bento-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.bento-card img, .hero-carousel-img {
+    border-radius: var(--card-radius);
+    object-fit: cover;
+    width: 100%;
+}
+
+.bento-card img {
+    margin-bottom: 1.5rem;
+    height: 200px;
+}
+
+.hero-carousel-img {
+    max-height: 80vh;
+}
+
+.rounded-card, .carousel-over {
+    border-radius: var(--card-radius) !important;
+}
+
+.carousel-over {
+    overflow: hidden;
+}
+
+.btn-modern {
+    border-radius: 50px;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn-modern:hover {
+    transform: scale(1.02);
+}
+
+/* Responsive Image Styles (Migrated from about/index) */
+.responsive-image1 {
+    width: 100%;
+    height: auto;
+    max-height: 700px;
+    object-fit: contain;
+    border-radius: 10px;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .responsive-image1 {
+        max-height: 100%;
+    }
+}
+
+/* ---------------------------------
+   CUSTOM NAVBAR HOVER & RESPONSIVE UI
+-----------------------------------*/
+.nav-link-custom {
+    position: relative;
+    padding-bottom: 2px !important;
+    font-weight: 500 !important;
+    color: #475569 !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link-custom::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: var(--brand-color);
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    transform: translateX(-50%);
+}
+
+.nav-link-custom:hover, .nav-link-custom.active {
+    color: var(--brand-color) !important;
+}
+
+.nav-link-custom:hover::after, .nav-link-custom.active::after {
+    width: 80%;
+}
+
+@media (max-width: 991.98px) {
+    .nav-link-custom {
+        width: fit-content; /* Constrains the pseudo-element underline width */
+        margin-left: 0;
+    }
+    .nav-link-custom::after {
+        left: 0;
+        transform: none; /* Align from the left instead of center on mobile */
+    }
+    .nav-link-custom:hover::after, .nav-link-custom.active::after {
+        width: 100%; /* Go 100% of the text width on mobile for better looks */
+    }
+}
+
+.brand-text {
+    letter-spacing: -0.5px;
+}
