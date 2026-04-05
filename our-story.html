@@ -237,6 +237,24 @@
             });
         });
     </script>
+    <!-- Back to Top -->
+    <a href="#" id="backToTop" class="btn btn-primary rounded-circle shadow"><i class='bx bx-up-arrow-alt'></i></a>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const backToTop = document.getElementById('backToTop');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    backToTop.classList.add('show');
+                } else {
+                    backToTop.classList.remove('show');
+                }
+            });
+            backToTop.addEventListener('click', (e) => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        });
+    </script>
 </body>
 
 </html>

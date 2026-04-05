@@ -4,30 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AKSA Foundation | Special Needs School & Sports Academy in Chennai</title>
-    <meta name="title" content="AKSA Foundation | Special Needs School & Sports Academy in Chennai">
+    <title>Event Gallery | AKSA Foundation</title>
     <meta name="description"
-        content="AKSA Foundation empowers children with special needs through our Learning Centre, Vocational Centre, and Sports Academy in Chennai. Specializing in swim therapy and independent living.">
-    <meta name="keywords"
-        content="special needs school Chennai, AKSA Foundation, disability support NGO Chennai, vocational training for disabled, swim therapy for kids, special education Shenoy Nagar">
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://aksafoundation.org/">
-    <meta property="og:title" content="AKSA Foundation | Empowering Special Needs Children in Chennai">
-    <meta property="og:description"
-        content="A safe, valued, and empowered environment for children with diverse disabilities to reach their fullest potential through education and sports.">
-    <meta property="og:image" content="https://aksafoundation.org/images/logo.png">
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://aksafoundation.org/">
-    <meta property="twitter:title" content="AKSA Foundation | Special Needs School Chennai">
-    <meta property="twitter:description"
-        content="Empowering young minds with disabilities through integrated learning and therapeutic sports in Chennai.">
-    <!-- Geo-Tags -->
-    <meta name="geo.region" content="IN-TN" />
-    <meta name="geo.placename" content="Chennai" />
-    <meta name="geo.position" content="13.0784;80.2289" />
-    <meta name="ICBM" content="13.0784, 80.2289" />
+        content="Explore the latest events, celebrations, and milestones at AKSA Foundation. Witness the joy and progress of our special needs community in Chennai.">
     <!-- Google Fonts (Lexend body, Figtree heading) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,11 +18,117 @@
     <link rel='stylesheet' href='assets/css/theme.css'>
     <!-- Boxicons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- Owl Carousel -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    <!-- Global Styles -->
+    <style>
+        .event-card {
+            border: none;
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            background: #fff;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .event-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-media {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+            overflow: hidden;
+            background: #f8f9fa;
+        }
+
+        .card-media video,
+        .card-media img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 20px 20px 10px;
+        }
+
+        .card-content {
+            padding: 10px 20px 20px;
+            flex-grow: 1;
+        }
+
+        .card-title {
+            font-family: 'Figtree', sans-serif;
+            font-weight: 700;
+            font-size: 1.25rem;
+            line-height: 1.4;
+            color: #2d3436;
+            margin-bottom: 12px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .card-text {
+            font-family: 'Lexend', sans-serif;
+            font-size: 0.95rem;
+            color: #636e72;
+            line-height: 1.6;
+            margin-bottom: 0;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .card-footer-custom {
+            padding: 15px 20px;
+            border-top: 1px solid #f1f2f6;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #fafafa;
+        }
+
+        .card-stats {
+            display: flex;
+            gap: 15px;
+            color: #b2bec3;
+            font-size: 0.9rem;
+        }
+
+        .card-stats i {
+            margin-right: 4px;
+        }
+
+        .read-more-link {
+            color: #ea6020;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            transition: gap 0.2s ease;
+        }
+
+        .read-more-link:hover {
+            gap: 8px;
+            color: #d35400;
+        }
+    </style>
 </head>
 
 <body>
@@ -67,6 +152,7 @@
             </div>
         </div>
     </header>
+
     <!-- Main Navbar -->
     <nav class="navbar navbar-expand-xl navbar-light bg-white navbar-sticky py-3 shadow-sm">
         <div class="container-fluid px-4 px-xl-5">
@@ -85,32 +171,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto align-items-xl-center gap-2 gap-xl-3">
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-custom active d-flex align-items-center gap-1" href="index.html">
-                            <i class='bx bx-home-alt'></i> Home
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-custom d-flex align-items-center gap-1" href="learning-centre.html">
-                            <i class='bx bx-book-reader'></i> Learning Centre
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-custom d-flex align-items-center gap-1"
-                            href="vocational-centre.html">
-                            <i class='bx bx-briefcase'></i> Vocational Centre
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-custom d-flex align-items-center gap-1" href="sport-academy.html">
-                            <i class='bx bx-run'></i> Sports Academy
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link nav-link-custom d-flex align-items-center gap-1" href="events.html">
-                            <i class='bx bx-calendar-event'></i> Events
-                        </a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link nav-link-custom d-flex align-items-center gap-1" href="index.html"><i class='bx bx-home-alt'></i> Home</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-custom d-flex align-items-center gap-1" href="learning-centre.html"><i class='bx bx-book-reader'></i> Learning Centre</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-custom d-flex align-items-center gap-1" href="vocational-centre.html"><i class='bx bx-briefcase'></i> Vocational Centre</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-custom d-flex align-items-center gap-1" href="sport-academy.html"><i class='bx bx-run'></i> Sports Academy</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-custom d-flex align-items-center gap-1" href="events.html"><i class='bx bx-calendar-event'></i> Events</a></li>
                     <li class="nav-item text-nowrap mt-2 mt-xl-0 ms-xl-2">
                         <a class="btn btn-primary btn-modern w-100 d-inline-flex justify-content-center align-items-center gap-2 shadow-sm border-0"
                             href="contact.html">
@@ -121,473 +186,216 @@
             </div>
         </div>
     </nav>
+
     <main>
-        <main>
-            <section class="py-5">
-                <div class="container">
-                    <div class="row px-lg-0 px-3 flex-wrap">
-                        <div class="card col-lg-4 col-12 p-2 mb-4" style="min-height: 480px">
-                            <!-- <img class="img-fluid mb-1" src="https://static.wixstatic.com/media/dd705e_6cf8c75358104482a9beb4090178f468~mv2.png/v1/fill/w_326,h_245,fp_0.50_0.50,q_95,enc_auto/dd705e_6cf8c75358104482a9beb4090178f468~mv2.png" alt=""> -->
-                            <div id="hero-slide" class="carousel py-2 px-3 px-md-5" data-bs-ride="carousel">
-                                <video class="carousel-image img-fluid position-relative" autoplay muted loop>
+        <!-- Hero Section -->
+        <section class="hero-video-container mb-5">
+            <video autoplay muted loop playsinline>
+                <source src="assets/images/vedio/wave.mp4" type="video/mp4">
+            </video>
+            <div class="hero-video-overlay"></div>
+            <div class="container hero-video-content">
+                <h1 class="display-3 fw-bold text-white mb-4">Event Gallery</h1>
+                <p class="fs-4 text-white text-opacity-90 max-width-700 mx-auto">Celebrating every achievement, smile, and milestone in the lives of our students.</p>
+            </div>
+        </section>
+
+        <!-- Events Grid -->
+        <section class="py-5">
+            <div class="container px-xl-5">
+                <div class="row g-4 justify-content-center">
+                    <!-- Post 1: Emoji Day -->
+                    <div class="col-lg-4 col-md-6">
+                        <article class="event-card">
+                            <div class="card-media">
+                                <video autoplay muted loop playsinline>
                                     <source src="assets/images/vedio/em_vido.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
                                 </video>
                             </div>
-                            <div class="d-flex mb-2">
-                                <div class="col-9 d-flex">
-                                    <div class="d-flex justify-content-center align-items-center px-3">
-                                        <img class="img-fluid" src="assets/images/vedio/small_logo.avif" alt="">
-                                    </div>
-                                    <div class="py-2 pe-3">
-                                        <div>
-                                            <p class="m-0">AKSA</p>
-                                        </div>
-                                        <div>
-                                            <p class="m-0">Feb 2</p>
-                                        </div>
-                                    </div>
-                                    <div class="py-2 d-flex align-items-end">
-                                        <div>
-                                            <p class="m-0">. 1 min read</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-3 d-flex">
-                                    <div class="d-flex align-items-center px-4">
-                                        <a href=""><i
-                                                class="bi bi-three-dots-vertical threedoticon fs-4 position-relative"></i></a>
-                                        <div class="position-absolute top-0 start-100 translate-middle post"
-                                            style="display: none;">
-                                            <h1>asadsdgasfdsf</h1>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="card-meta">
+                                <span><i class='bx bx-calendar'></i> Feb 2, 2026</span>
+                                <span><i class='bx bx-time'></i> 1 min read</span>
                             </div>
-                            <div>
-                                <a href="post1.php" class="main-content">
-                                    <h6 class="ft1 truncate-text">Emoji Day Celebration at AKSA Foundation 😃🎉</h6>
-                                    <p class="ft truncate-text">AKSA Foundation turned into a world of smiles and
-                                        giggles as we celebrated World Emoji Day with our little stars! 🌟 The day was
-                                        filled...</p>
-                                </a>
+                            <div class="card-content">
+                                <h3 class="card-title">Emoji Day Celebration at AKSA Foundation 😃🎉</h3>
+                                <p class="card-text">AKSA Foundation turned into a world of smiles and giggles as we celebrated World Emoji Day with our little stars! The day was filled with joy...</p>
                             </div>
-                            <hr class="px-4">
-                            <div class="d-flex justify-content-evenly px-3">
-                                <div class="col-9 d-flex">
-                                    <div class="d-flex p-2 me-2">
-                                        <i class="bi bi-eye px-2"></i>
-                                        <span>11</span>
-                                    </div>
-                                    <div class="d-flex p-2">
-                                        <i class="bi bi-chat-left px-2"></i>
-                                        <span>2</span>
-                                    </div>
+                            <div class="card-footer-custom">
+                                <div class="card-stats">
+                                    <span><i class='bx bx-show'></i> 128</span>
+                                    <span><i class='bx bx-heart'></i> 24</span>
                                 </div>
-                                <div class="col-3 d-flex">
-                                    <div class="d-flex p-2">
-                                        <span>3</span>
-                                        <a href="">
-                                            <i class="bi bi-heart-fill px-2"></i>
-                                        </a>
-                                    </div>
-                                </div>
+                                <a href="post1.php" class="read-more-link">Read More <i class='bx bx-right-arrow-alt'></i></a>
                             </div>
-                        </div>
-                        <div class="card col-lg-4 col-12 p-2 mb-4" style="min-height: 480px">
-                            <!-- <img class="img-fluid mb-1" src="https://static.wixstatic.com/media/dd705e_6cf8c75358104482a9beb4090178f468~mv2.png/v1/fill/w_326,h_245,fp_0.50_0.50,q_95,enc_auto/dd705e_6cf8c75358104482a9beb4090178f468~mv2.png" alt=""> -->
-                            <div id="hero-slide" class="carousel py-2 px-3 px-md-5" data-bs-ride="carousel">
-                                <video class="carousel-image img-fluid position-relative" autoplay muted loop>
+                        </article>
+                    </div>
+
+                    <!-- Post 2: Independence Day -->
+                    <div class="col-lg-4 col-md-6">
+                        <article class="event-card">
+                            <div class="card-media">
+                                <video autoplay muted loop playsinline>
                                     <source src="assets/images/file (4).mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
                                 </video>
                             </div>
-                            <div class="d-flex mb-2">
-                                <div class="col-9 d-flex">
-                                    <div class="d-flex justify-content-center align-items-center px-3">
-                                        <img class="img-fluid" src="assets/images/vedio/small_logo.avif" alt="">
-                                    </div>
-                                    <div class="py-2 pe-3">
-                                        <div>
-                                            <p class="m-0">AKSA</p>
-                                        </div>
-                                        <div>
-                                            <p class="m-0">Feb 2</p>
-                                        </div>
-                                    </div>
-                                    <div class="py-2 d-flex align-items-end">
-                                        <div>
-                                            <p class="m-0">. 1 min read</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-3 d-flex">
-                                    <div class="d-flex align-items-center px-4">
-                                        <a href=""><i
-                                                class="bi bi-three-dots-vertical threedoticon fs-4 position-relative"></i></a>
-                                        <div class="position-absolute top-0 start-100 translate-middle post"
-                                            style="display: none;">
-                                            <h1>asadsdgasfdsf</h1>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="card-meta">
+                                <span><i class='bx bx-calendar'></i> Aug 15, 2025</span>
+                                <span><i class='bx bx-time'></i> 2 min read</span>
                             </div>
-                            <div>
-                                <a href="post2.php" class="main-content">
-                                    <h6 class="ft1 truncate-text">Independence Day Celebration at AKSA Foundation</h6>
-                                    <p class="ft truncate-text">AKSA Foundation marked Independence Day with immense
-                                        pride and enthusiasm, bringing together children, teachers, and supporters for
-                                        a...</p>
-                                </a>
+                            <div class="card-content">
+                                <h3 class="card-title">Independence Day Pride at AKSA 🇮🇳</h3>
+                                <p class="card-text">Marking Independence Day with immense pride and enthusiasm, bringing together children, teachers, and supporters for a patriotic tribute...</p>
                             </div>
-                            <hr class="px-4">
-                            <div class="d-flex justify-content-evenly px-3">
-                                <div class="col-9 d-flex">
-                                    <div class="d-flex p-2 me-2">
-                                        <i class="bi bi-eye px-2"></i>
-                                        <span>11</span>
-                                    </div>
-                                    <div class="d-flex p-2">
-                                        <i class="bi bi-chat-left px-2"></i>
-                                        <span>2</span>
-                                    </div>
+                            <div class="card-footer-custom">
+                                <div class="card-stats">
+                                    <span><i class='bx bx-show'></i> 245</span>
+                                    <span><i class='bx bx-heart'></i> 56</span>
                                 </div>
-                                <div class="col-3 d-flex">
-                                    <div class="d-flex p-2">
-                                        <span>3</span>
-                                        <a href="">
-                                            <i class="bi bi-heart-fill px-2"></i>
-                                        </a>
-                                    </div>
-                                </div>
+                                <a href="post2.php" class="read-more-link">Read More <i class='bx bx-right-arrow-alt'></i></a>
                             </div>
-                        </div>
-                        <div class="card col-lg-4 col-12 p-2 mb-4" style="min-height: 480px">
-                            <img class="img-fluid mb-1 responsive-image"
-                                src="https://static.wixstatic.com/media/dd705e_6cf8c75358104482a9beb4090178f468~mv2.png/v1/fill/w_326,h_245,fp_0.50_0.50,q_95,enc_auto/dd705e_6cf8c75358104482a9beb4090178f468~mv2.png"
-                                alt="">
-                            <div class="d-flex mb-2">
-                                <div class="col-9 d-flex">
-                                    <div class="d-flex justify-content-center align-items-center px-3">
-                                        <img class="img-fluid" src="assets/images/vedio/small_logo.avif" alt="">
-                                    </div>
-                                    <div class="py-2 pe-3">
-                                        <div>
-                                            <p class="m-0">AKSA</p>
-                                        </div>
-                                        <div>
-                                            <p class="m-0">Feb 2</p>
-                                        </div>
-                                    </div>
-                                    <div class="py-2 d-flex align-items-end">
-                                        <div>
-                                            <p class="m-0">. 1 min read</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-3 d-flex">
-                                    <div class="d-flex align-items-center px-4">
-                                        <a href=""><i
-                                                class="bi bi-three-dots-vertical threedoticon fs-4 position-relative"></i></a>
-                                        <div class="position-absolute top-0 start-100 translate-middle post"
-                                            style="display: none;">
-                                            <h1>asadsdgasfdsf</h1>
-                                        </div>
-                                    </div>
-                                </div>
+                        </article>
+                    </div>
+
+                    <!-- Post 3: Wave Riders -->
+                    <div class="col-lg-4 col-md-6">
+                        <article class="event-card">
+                            <div class="card-media">
+                                <img src="https://static.wixstatic.com/media/dd705e_6cf8c75358104482a9beb4090178f468~mv2.png/v1/fill/w_326,h_245,fp_0.50_0.50,q_95,enc_auto/dd705e_6cf8c75358104482a9beb4090178f468~mv2.png" alt="Wave Riders">
                             </div>
-                            <div>
-                                <a href="post3.php" class="main-content">
-                                    <h6 class="ft1 truncate-text">Wave Riders: A Historic 604 km Swim Completed!</h6>
-                                    <p class="ft truncate-text">In an extraordinary display of resilience and
-                                        determination, Wave Riders has officially completed its ambitious 604 km relay
-                                        swim! This...</p>
-                                </a>
+                            <div class="card-meta">
+                                <span><i class='bx bx-calendar'></i> Jul 10, 2025</span>
+                                <span><i class='bx bx-time'></i> 3 min read</span>
                             </div>
-                            <hr class="px-4">
-                            <div class="d-flex justify-content-evenly px-3">
-                                <div class="col-9 d-flex">
-                                    <div class="d-flex p-2 me-2">
-                                        <i class="bi bi-eye px-2"></i>
-                                        <span>11</span>
-                                    </div>
-                                    <div class="d-flex p-2">
-                                        <i class="bi bi-chat-left px-2"></i>
-                                        <span>2</span>
-                                    </div>
-                                </div>
-                                <div class="col-3 d-flex">
-                                    <div class="d-flex p-2">
-                                        <span>3</span>
-                                        <a href="">
-                                            <i class="bi bi-heart-fill px-2"></i>
-                                        </a>
-                                    </div>
-                                </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Wave Riders: Historic 604 km Swim Completed! 🏊‍♂️</h3>
+                                <p class="card-text">In an extraordinary display of resilience, Wave Riders has officially completed its ambitious 604 km relay swim! A moment of triumph for all...</p>
                             </div>
-                        </div>
-                        <div class="card col-lg-4 col-12 p-2 mb-4" style="min-height: 480px">
-                            <!-- <img class="img-fluid mb-1" src="https://static.wixstatic.com/media/dd705e_6cf8c75358104482a9beb4090178f468~mv2.png/v1/fill/w_326,h_245,fp_0.50_0.50,q_95,enc_auto/dd705e_6cf8c75358104482a9beb4090178f468~mv2.png" alt=""> -->
-                            <div id="hero-slide" class="carousel py-2 px-3 px-md-5" data-bs-ride="carousel">
-                                <video class="carousel-image img-fluid position-relative" autoplay muted loop>
+                            <div class="card-footer-custom">
+                                <div class="card-stats">
+                                    <span><i class='bx bx-show'></i> 892</span>
+                                    <span><i class='bx bx-heart'></i> 112</span>
+                                </div>
+                                <a href="post3.php" class="read-more-link">Read More <i class='bx bx-right-arrow-alt'></i></a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Post 4: Christmas -->
+                    <div class="col-lg-4 col-md-6">
+                        <article class="event-card">
+                            <div class="card-media">
+                                <video autoplay muted loop playsinline>
                                     <source src="assets/images/vedio/xmax.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
                                 </video>
                             </div>
-                            <div class="d-flex mb-2">
-                                <div class="col-9 d-flex">
-                                    <div class="d-flex justify-content-center align-items-center px-3">
-                                        <img class="img-fluid" src="assets/images/vedio/small_logo.avif" alt="">
-                                    </div>
-                                    <div class="py-2 pe-3">
-                                        <div>
-                                            <p class="m-0">AKSA</p>
-                                        </div>
-                                        <div>
-                                            <p class="m-0">Feb 2</p>
-                                        </div>
-                                    </div>
-                                    <div class="py-2 d-flex align-items-end">
-                                        <div>
-                                            <p class="m-0">. 1 min read</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-3 d-flex">
-                                    <div class="d-flex align-items-center px-4">
-                                        <a href=""><i
-                                                class="bi bi-three-dots-vertical threedoticon fs-4 position-relative"></i></a>
-                                        <div class="position-absolute top-0 start-100 translate-middle post"
-                                            style="display: none;">
-                                            <h1>asadsdgasfdsf</h1>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="card-meta">
+                                <span><i class='bx bx-calendar'></i> Dec 25, 2025</span>
+                                <span><i class='bx bx-time'></i> 1 min read</span>
                             </div>
-                            <div>
-                                <a href="post4.php" class="main-content">
-                                    <h6 class="ft1 truncate-text">Spreading Love and Joy: A Heartwarming Christmas at
-                                        AKSA Foundation</h6>
-                                    <p class="ft truncate-text">Christmas at AKSA Foundation was a magical celebration
-                                        filled with love, laughter, and togetherness. Our special children decorated
-                                        the...</p>
-                                </a>
+                            <div class="card-content">
+                                <h3 class="card-title">Spspreading Love & Joy: Christmas at AKSA 🎄</h3>
+                                <p class="card-text">A magical celebration filled with love, laughter, and togetherness. Our special children decorated the foundation with festive spirits...</p>
                             </div>
-                            <hr class="px-4">
-                            <div class="d-flex justify-content-evenly px-3">
-                                <div class="col-9 d-flex">
-                                    <div class="d-flex p-2 me-2">
-                                        <i class="bi bi-eye px-2"></i>
-                                        <span>11</span>
-                                    </div>
-                                    <div class="d-flex p-2">
-                                        <i class="bi bi-chat-left px-2"></i>
-                                        <span>2</span>
-                                    </div>
+                            <div class="card-footer-custom">
+                                <div class="card-stats">
+                                    <span><i class='bx bx-show'></i> 312</span>
+                                    <span><i class='bx bx-heart'></i> 78</span>
                                 </div>
-                                <div class="col-3 d-flex">
-                                    <div class="d-flex p-2">
-                                        <span>3</span>
-                                        <a href="">
-                                            <i class="bi bi-heart-fill px-2"></i>
-                                        </a>
-                                    </div>
-                                </div>
+                                <a href="post4.php" class="read-more-link">Read More <i class='bx bx-right-arrow-alt'></i></a>
                             </div>
-                        </div>
-                        <div class="card col-lg-4 col-12 p-2 mb-4" style="min-height: 480px">
-                            <img class="img-fluid mb-1 responsive-image" src="assets/images/vedio/diwali.avif" alt="">
-                            <div class="d-flex mb-2">
-                                <div class="col-9 d-flex">
-                                    <div class="d-flex justify-content-center align-items-center px-3">
-                                        <img class="img-fluid" src="assets/images/vedio/small_logo.avif" alt="">
-                                    </div>
-                                    <div class="py-2 pe-3">
-                                        <div>
-                                            <p class="m-0">AKSA</p>
-                                        </div>
-                                        <div>
-                                            <p class="m-0">Feb 2</p>
-                                        </div>
-                                    </div>
-                                    <div class="py-2 d-flex align-items-end">
-                                        <div>
-                                            <p class="m-0">. 1 min read</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-3 d-flex">
-                                    <div class="d-flex align-items-center px-4">
-                                        <a href=""><i
-                                                class="bi bi-three-dots-vertical threedoticon fs-4 position-relative"></i></a>
-                                        <div class="position-absolute top-0 start-100 translate-middle post"
-                                            style="display: none;">
-                                            <h1>asadsdgasfdsf</h1>
-                                        </div>
-                                    </div>
-                                </div>
+                        </article>
+                    </div>
+
+                    <!-- Post 5: Diwali -->
+                    <div class="col-lg-4 col-md-6">
+                        <article class="event-card">
+                            <div class="card-media">
+                                <img src="assets/images/vedio/diwali.avif" alt="Diwali">
                             </div>
-                            <div>
-                                <a href="post5.php" class="main-content">
-                                    <h6 class="ft1 truncate-text">Lighting Up Lives: A Joyful Diwali at AKSA Foundation
-                                    </h6>
-                                    <p class="ft truncate-text">At AKSA Foundation, Diwali was more than just a
-                                        festival—it was a celebration of hope and togetherness. The school sparkled with
-                                        colorful...</p>
-                                </a>
+                            <div class="card-meta">
+                                <span><i class='bx bx-calendar'></i> Oct 31, 2025</span>
+                                <span><i class='bx bx-time'></i> 2 min read</span>
                             </div>
-                            <hr class="px-4">
-                            <div class="d-flex justify-content-evenly px-3">
-                                <div class="col-9 d-flex">
-                                    <div class="d-flex p-2 me-2">
-                                        <i class="bi bi-eye px-2"></i>
-                                        <span>11</span>
-                                    </div>
-                                    <div class="d-flex p-2">
-                                        <i class="bi bi-chat-left px-2"></i>
-                                        <span>2</span>
-                                    </div>
-                                </div>
-                                <div class="col-3 d-flex">
-                                    <div class="d-flex p-2">
-                                        <span>3</span>
-                                        <a href="">
-                                            <i class="bi bi-heart-fill px-2"></i>
-                                        </a>
-                                    </div>
-                                </div>
+                            <div class="card-content">
+                                <h3 class="card-title">Lighting Up Lives: Joyful Diwali at AKSA 🪔</h3>
+                                <p class="card-text">Diwali was more than just a festival—it was a celebration of hope and togetherness. The school sparkled with colorful lights and joy...</p>
                             </div>
-                        </div>
-                        <div class="card col-lg-4 col-12 p-2 mb-4" style="min-height: 480px">
-                            <img class="img-fluid mb-1 responsive-image" src="assets/images/vedio/pongal1.webp" alt="">
-                            <div class="d-flex mb-2">
-                                <div class="col-9 d-flex">
-                                    <div class="d-flex justify-content-center align-items-center px-3">
-                                        <img class="img-fluid" src="assets/images/vedio/small_logo.avif" alt="">
-                                    </div>
-                                    <div class="py-2 pe-3">
-                                        <div>
-                                            <p class="m-0">AKSA</p>
-                                        </div>
-                                        <div>
-                                            <p class="m-0">Feb 2</p>
-                                        </div>
-                                    </div>
-                                    <div class="py-2 d-flex align-items-end">
-                                        <div>
-                                            <p class="m-0">. 1 min read</p>
-                                        </div>
-                                    </div>
+                            <div class="card-footer-custom">
+                                <div class="card-stats">
+                                    <span><i class='bx bx-show'></i> 456</span>
+                                    <span><i class='bx bx-heart'></i> 94</span>
                                 </div>
-                                <div class="col-3 d-flex">
-                                    <div class="d-flex align-items-center px-4">
-                                        <a href=""><i
-                                                class="bi bi-three-dots-vertical threedoticon fs-4 position-relative"></i></a>
-                                        <div class="position-absolute top-0 start-100 translate-middle post"
-                                            style="display: none;">
-                                            <h1>asadsdgasfdsf</h1>
-                                        </div>
-                                    </div>
-                                </div>
+                                <a href="post5.php" class="read-more-link">Read More <i class='bx bx-right-arrow-alt'></i></a>
                             </div>
-                            <div>
-                                <a href="post6.php" class="main-content">
-                                    <h6 class="ft1 truncate-text">A Harvest of Smiles: Celebrating Pongal at AKSA
-                                        Foundation</h6>
-                                    <p class="ft truncate-text">At AKSA Foundation, Pongal wasn’t just a festival; it
-                                        was a celebration of unity, tradition, and the incredible spirit of our
-                                        special...</p>
-                                </a>
+                        </article>
+                    </div>
+
+                    <!-- Post 6: Pongal -->
+                    <div class="col-lg-4 col-md-6">
+                        <article class="event-card">
+                            <div class="card-media">
+                                <img src="assets/images/vedio/pongal1.webp" alt="Pongal">
                             </div>
-                            <hr class="px-4">
-                            <div class="d-flex justify-content-evenly px-3">
-                                <div class="col-9 d-flex">
-                                    <div class="d-flex p-2 me-2">
-                                        <i class="bi bi-eye px-2"></i>
-                                        <span>11</span>
-                                    </div>
-                                    <div class="d-flex p-2">
-                                        <i class="bi bi-chat-left px-2"></i>
-                                        <span>2</span>
-                                    </div>
-                                </div>
-                                <div class="col-3 d-flex">
-                                    <div class="d-flex p-2">
-                                        <span>3</span>
-                                        <a href="">
-                                            <i class="bi bi-heart-fill px-2"></i>
-                                        </a>
-                                    </div>
-                                </div>
+                            <div class="card-meta">
+                                <span><i class='bx bx-calendar'></i> Jan 14, 2026</span>
+                                <span><i class='bx bx-time'></i> 2 min read</span>
                             </div>
-                        </div>
+                            <div class="card-content">
+                                <h3 class="card-title">A Harvest of Smiles: Celebrating Pongal 🌾</h3>
+                                <p class="card-text">Pongal wasn’t just a festival; it was a celebration of unity, tradition, and the incredible spirit of our special students in Chennai...</p>
+                            </div>
+                            <div class="card-footer-custom">
+                                <div class="card-stats">
+                                    <span><i class='bx bx-show'></i> 187</span>
+                                    <span><i class='bx bx-heart'></i> 42</span>
+                                </div>
+                                <a href="post6.php" class="read-more-link">Read More <i class='bx bx-right-arrow-alt'></i></a>
+                            </div>
+                        </article>
                     </div>
                 </div>
-            </section>
-        </main>
+            </div>
+        </section>
     </main>
+
     <!-- Footer -->
     <footer class="bg-dark text-light py-5 mt-5 rounded-top-5">
         <div class="container">
             <div class="row g-4">
-                <!-- Brand -->
                 <div class="col-lg-4 col-md-6">
                     <h4 class="text-white fw-bold mb-3">AKSA Foundation</h4>
-                    <p class="text-light text-opacity-75">Empowering young minds with disabilities through integrated
-                        learning and therapeutic sports in Chennai.</p>
+                    <p class="text-light text-opacity-75">Empowering young minds with disabilities through integrated learning and therapeutic sports in Chennai.</p>
                 </div>
-                <!-- Contact -->
                 <div class="col-lg-4 col-md-6">
                     <h5 class="text-white fw-bold mb-3">Contact Us</h5>
                     <ul class="list-unstyled d-flex flex-column gap-2 text-light text-opacity-75">
-                        <li class="d-flex align-items-center gap-2">
-                            <i class='bx bx-phone'></i> 90429 75899
-                        </li>
-                        <li class="d-flex align-items-center gap-2">
-                            <i class='bx bx-envelope'></i> contact@aksafoundation.org
-                        </li>
+                        <li class="d-flex align-items-center gap-2"><i class='bx bx-phone'></i> 90429 75899</li>
+                        <li class="d-flex align-items-center gap-2"><i class='bx bx-envelope'></i> contact@aksafoundation.org</li>
                         <li class="d-flex align-items-start gap-2 mt-2">
                             <i class='bx bx-map mt-1'></i>
-                            <span>New no:7, old no:4, Gandhi Rd, C Block, Shenoy Nagar, Chennai, Tamil Nadu
-                                600030.</span>
+                            <span>New no:7, old no:4, Gandhi Rd, C Block, Shenoy Nagar, Chennai, Tamil Nadu 600030.</span>
                         </li>
                     </ul>
                 </div>
-                <!-- Quick Links -->
                 <div class="col-lg-4 col-md-12">
                     <h5 class="text-white fw-bold mb-3">Quick Actions</h5>
                     <div class="d-flex flex-column gap-3">
-                        <a href="donate.html"
-                            class="btn btn-primary btn-modern justify-content-center text-white w-100">
-                            <i class='bx bx-heart'></i> Donate Us
-                        </a>
-                        <a href="admissions.html" class="btn btn-outline-light btn-modern justify-content-center w-100">
-                            <i class='bx bx-file-blank'></i> Admissions Enquiry
-                        </a>
-                        <a href="volunteer.html" class="btn btn-outline-light btn-modern justify-content-center w-100">
-                            <i class='bx bx-group'></i> Volunteer/Intership/Jobs
-                        </a>
+                        <a href="donate.html" class="btn btn-primary btn-modern justify-content-center text-white w-100"><i class='bx bx-heart'></i> Donate Us</a>
+                        <a href="admissions.html" class="btn btn-outline-light btn-modern justify-content-center w-100"><i class='bx bx-file-blank'></i> Admissions Enquiry</a>
                     </div>
                 </div>
             </div>
             <hr class="my-4 border-secondary">
             <div class="row text-center text-md-start">
-                <div class="col-md-6 mb-2 mb-md-0 text-light text-opacity-50">
-                    &copy; 2026 AKSA Foundation. All rights reserved.
-                </div>
-                <div class="col-md-6 text-md-end text-light text-opacity-50">
-                    Developed By D² code crafts
-                </div>
+                <div class="col-md-6 text-light text-opacity-50">&copy; 2026 AKSA Foundation. All rights reserved.</div>
+                <div class="col-md-6 text-md-end text-light text-opacity-50"><a href="https://karlekartier.github.io/My-App/" class="text-decoration-none text-light">Karthick-kishore</a></div>
             </div>
         </div>
     </footer>
-    <!-- Bootstrap 5.3 JS Bundle (includes Popper) -->
+
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- jQuery (Required for Owl) -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <!-- Owl Carousel JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <!-- Dynamic Active Nav -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const currentPath = window.location.pathname.split('/').pop() || 'index.html';
@@ -597,8 +405,22 @@
                     link.classList.add('active');
                 }
             });
+
+            // Back to Top functionality
+            const backToTop = document.getElementById('backToTop');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    backToTop.classList.add('show');
+                } else {
+                    backToTop.classList.remove('show');
+                }
+            });
+            backToTop.addEventListener('click', (e) => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
         });
     </script>
+    <a href="#" id="backToTop" class="btn btn-primary rounded-circle shadow"><i class='bx bx-up-arrow-alt'></i></a>
 </body>
-
 </html>

@@ -123,28 +123,19 @@
     </nav>
     <main>
         <main>
-            <section class="hero-section hero-section-full-height">
-                <div class="container-fluid p-0">
-                    <div class="row">
-                        <div class="col-lg-12 col-12 p-0">
-                            <div id="hero-slide" class="carousel" data-bs-ride="carousel"
-                                style="height: 70vh; overflow: hidden;">
-                                <video class="carousel-image img-fluid position-relative" autoplay muted loop>
-                                    <source src="assets/images/file.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                                <div class="carousel-over">
-                                    <div class="position-absolute top-50 start-50 translate-middle">
-                                        <p class="text-center text-white fw-bold fs-lg-2 fs-1 mb-4 ln_font">AKSA
-                                            LEARNING CENTRE</p>
-                                        <a href="contact.html"
-                                            class="btn btn-light position-relative top-50 start-50 translate-middle rounded-pill px-3">Contact
-                                            Us</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <section class="hero-video-container mb-5">
+                <video autoplay muted loop playsinline>
+                    <source src="assets/images/file.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="hero-video-overlay"></div>
+                <div class="container hero-video-content">
+                    <h1 class="display-3 fw-bold text-white mb-4">AKSA Learning Centre</h1>
+                    <p class="fs-4 text-white text-opacity-90 mb-5 max-width-700 mx-auto">Empowering young minds through
+                        specialized education and compassionate care.</p>
+                    <a href="contact.html" class="btn btn-primary btn-modern btn-lg px-5 shadow">
+                        Contact Us <i class='bx bx-right-arrow-alt'></i>
+                    </a>
                 </div>
             </section>
             <section class="py-1">
@@ -320,54 +311,78 @@
                     </div>
                 </div>
             </section>
-            <section class="py-2">
-                <div class="container-fluid py-5" style="background-color: #80808026;">
-                    <div class="row">
-                        <div class="owl-carousel carousel-2 col-12">
-                            <div class="item">
-                                <img class="img-fluid  rounded-circle position-relative"
-                                    src="assets/images/learning/l8.JPG" alt="Image 1">
-                            </div>
-                            <div class="item">
-                                <img class="img-fluid  rounded-circle position-relative"
-                                    src="assets/images/learning/l2.JPG" alt="Image 2">
-                            </div>
-                            <div class="item">
-                                <img class="img-fluid  rounded-circle position-relative"
-                                    src="assets/images/learning/l1.jpg" alt="Image 3">
-                            </div>
-                            <div class="item">
-                                <img class="img-fluid  rounded-circle position-relative"
-                                    src="assets/images/learning/l6.JPG" alt="Image 3">
-                            </div>
-                            <div class="item">
-                                <img class="img-fluid  rounded-circle position-relative"
-                                    src="assets/images/learning/l4.JPG" alt="Image 3">
-                            </div>
-                            <div class="item">
-                                <img class="img-fluid  rounded-circle position-relative"
-                                    src="assets/images/learning/l7.JPG" alt="Image 3">
-                            </div>
-                        </div>
+            <section class="py-5 bg-light overflow-hidden">
+                <div class="container">
+                    <div class="text-center mb-5">
+                        <h2 class="fw-bold">Visual Journey of Learning</h2>
+                        <p class="text-muted">A glimpse into our vibrant and supportive educational environment.</p>
                     </div>
                 </div>
+                <div class="owl-carousel learning-scroller">
+                    <div class="item px-2"><img src="assets/images/learning/l1.jpg" alt="Learning Scene 1"></div>
+                    <div class="item px-2"><img src="assets/images/learning/l2.JPG" alt="Learning Scene 2"></div>
+                    <div class="item px-2"><img src="assets/images/learning/l3.JPG" alt="Learning Scene 3"></div>
+                    <div class="item px-2"><img src="assets/images/learning/l4.JPG" alt="Learning Scene 4"></div>
+                    <div class="item px-2"><img src="assets/images/learning/l5.JPG" alt="Learning Scene 5"></div>
+                    <div class="item px-2"><img src="assets/images/learning/l6.JPG" alt="Learning Scene 6"></div>
+                    <div class="item px-2"><img src="assets/images/learning/l7.JPG" alt="Learning Scene 7"></div>
+                    <div class="item px-2"><img src="assets/images/learning/l8.JPG" alt="Learning Scene 8"></div>
+                </div>
             </section>
-            <section class="py-2">
+            <section class="py-5">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 col-12 pb-5">
-                            <h3 class="text-dark text-lg-start  mb-3 ln_head" style="margin-left: 2.5em">Program
-                                Overview</h3>
-                            <img class="img-fluid" style="height:100%; align-items:center;margin-left: 3em"
-                                src="assets/images/learning/lp2.jpg" alt="">
+                    <div class="row g-5">
+                        <div class="col-lg-7">
+                            <h3 class="fw-bold mb-4">Program Overview</h3>
+                            <div class="row g-3">
+                                <div class="col-sm-6">
+                                    <div
+                                        class="p-4 bg-white rounded-4 shadow-sm border-start border-4 border-primary h-100">
+                                        <h5 class="fw-bold"><i class='bx bx-child text-primary me-2'></i>Early
+                                            Intervention</h5>
+                                        <p class="text-muted small mb-0">Foundational support for cognitive and sensory
+                                            development in young children.</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div
+                                        class="p-4 bg-white rounded-4 shadow-sm border-start border-4 border-success h-100">
+                                        <h5 class="fw-bold"><i class='bx bx-book-open text-success me-2'></i>Academics
+                                        </h5>
+                                        <p class="text-muted small mb-0">Individually tailored education focusing on
+                                            functional literacy and life skills.</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div
+                                        class="p-4 bg-white rounded-4 shadow-sm border-start border-4 border-warning h-100">
+                                        <h5 class="fw-bold"><i class='bx bx-certification text-warning me-2'></i>NIOS
+                                            Support</h5>
+                                        <p class="text-muted small mb-0">Preparing students for Open School examinations
+                                            with structured coaching.</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div
+                                        class="p-4 bg-white rounded-4 shadow-sm border-start border-4 border-info h-100">
+                                        <h5 class="fw-bold"><i class='bx bx-brain text-info me-2'></i>Therapy Services
+                                        </h5>
+                                        <p class="text-muted small mb-0">Integrated Speech, Occupational, and Physio
+                                            therapies for holistic growth.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-lg-6 col-12 pt-5">
-                            <p class="text-dark text-lg-start  mb-3 fs-5 ln">
-                                Join us and discover how our specialized programs transform your child's educational
-                                journey.
-                            </p>
-                            <img class="img-fluid img-radius w-100 aboutusimg" style="height:400px"
-                                src="assets/images/learning/l3.JPG" alt="">
+                        <div class="col-lg-5">
+                            <div class="position-relative h-100 min-height-300">
+                                <img src="assets/images/learning/l3.JPG" alt="Academic Scene"
+                                    class="img-fluid rounded-4 shadow w-100 h-100 object-fit-cover">
+                                <div
+                                    class="position-absolute bottom-0 start-0 p-4 bg-white m-3 rounded-4 shadow-sm d-none d-sm-block">
+                                    <p class="fw-bold text-dark mb-0 fs-5 line-height-1">"Every child learns
+                                        differently."</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -423,8 +438,9 @@
                 <div class="col-md-6 mb-2 mb-md-0 text-light text-opacity-50">
                     &copy; 2026 AKSA Foundation. All rights reserved.
                 </div>
-                <div class="col-md-6 text-md-end text-light text-opacity-50">
-                    Developed By D² code crafts
+                <div href="https://karlekartier.github.io/My-App/"
+                    class="col-md-6 text-md-end text-light text-opacity-50">
+                    Karthick-kishore
                 </div>
             </div>
         </div>
@@ -437,6 +453,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <!-- Dynamic Active Nav -->
     <script>
+        $(document).ready(function () {
+            $(".learning-scroller").owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: false,
+                dots: false,
+                autoplay: true,
+                autoplayTimeout: 2000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: { items: 1 },
+                    600: { items: 2 },
+                    1000: { items: 4 }
+                }
+            });
+        });
         document.addEventListener('DOMContentLoaded', () => {
             const currentPath = window.location.pathname.split('/').pop() || 'index.html';
             document.querySelectorAll('.nav-link').forEach(link => {
@@ -444,6 +476,24 @@
                 if (link.getAttribute('href') === currentPath) {
                     link.classList.add('active');
                 }
+            });
+        });
+    </script>
+    <!-- Back to Top -->
+    <a href="#" id="backToTop" class="btn btn-primary rounded-circle shadow"><i class='bx bx-up-arrow-alt'></i></a>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const backToTop = document.getElementById('backToTop');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    backToTop.classList.add('show');
+                } else {
+                    backToTop.classList.remove('show');
+                }
+            });
+            backToTop.addEventListener('click', (e) => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
             });
         });
     </script>
