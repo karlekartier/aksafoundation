@@ -4,12 +4,18 @@
     --brand-color: #ea6020;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Lexend', sans-serif;
     background-color: var(--primary-bg);
     color: #334155;
     -webkit-font-smoothing: antialiased;
 }
+
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Figtree', sans-serif;
@@ -47,15 +53,17 @@ h1, h2, h3, h4, h5, h6 {
     position: sticky;
     top: 0;
     z-index: 1030;
-    background: rgba(255, 255, 255, 0.85) !important;
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(0,0,0,0.05);
+    background: rgba(255, 255, 255, 0.7) !important;
+    backdrop-filter: blur(12px) saturate(180%);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
 }
 
 .nav-link {
     font-weight: 500;
     color: #475569 !important;
-    transition: color 0.2s ease;
+    transition: all 0.3s ease;
 }
 
 .nav-link:hover, .nav-link.active {
@@ -63,15 +71,35 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ---------------------------------
+   REVEAL ANIMATIONS (Scroll Observer)
+-----------------------------------*/
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+
+/* ---------------------------------
    BENTO GRID CARDS
 -----------------------------------*/
 .bento-card {
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.8);
     border-radius: var(--card-radius);
     padding: 2rem;
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
-    border: 1px solid rgba(0,0,0,0.02);
+    border: 1px solid rgba(255, 255, 255, 0.4);
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -79,12 +107,16 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     text-decoration: none;
     color: inherit;
+    backdrop-filter: blur(4px);
 }
 
 .bento-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    background: #ffffff;
+    border-color: var(--brand-color);
 }
+
 
 .bento-card img, .hero-carousel-img {
     border-radius: var(--card-radius);
@@ -302,4 +334,96 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
     transform: translate(-50%, -50%);
     object-fit: cover;
+}
+
+/* ---------------------------------
+   BRANDING ENHANCEMENTS (2026)
+-----------------------------------*/
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.navbar-logo-spin {
+    animation: spin 15s linear infinite;
+    filter: drop-shadow(0 0 5px rgba(234, 96, 32, 0.2));
+    height: 55px;
+    width: auto;
+}
+
+.navbar-brand-img {
+    height: 42px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover .navbar-brand-img {
+    transform: scale(1.05);
+}
+
+.footer-logo {
+    height: 140px;
+    width: auto;
+}
+
+
+
+
+@media (max-width: 576px) {
+    .navbar-brand-img {
+        height: 32px;
+    }
+    .footer-logo {
+        height: 45px;
+    }
+}
+
+
+
+/* ---------------------------------
+   TESTIMONIALS & GALLERY POLISH
+-----------------------------------*/
+.testimonials-carousel .owl-dots {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.testimonials-carousel .owl-dot {
+    width: 12px;
+    height: 12px;
+    background: #cbd5e1 !important;
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+}
+
+.testimonials-carousel .owl-dot.active {
+    background: var(--brand-color) !important;
+    width: 30px;
+    border-radius: 10px;
+}
+
+.testimonial-card {
+    transition: all 0.3s ease;
+    border: 1px solid rgba(234, 96, 32, 0.05) !important;
+}
+
+.testimonial-card:hover {
+    border-color: rgba(234, 96, 32, 0.2) !important;
+}
+
+.object-fit-cover {
+    object-fit: cover;
+}
+
+.gallery-overlay {
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 60%, transparent 100%);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.bento-card:hover .gallery-overlay {
+    background: linear-gradient(to top, rgba(234, 96, 32, 0.9) 0%, rgba(234, 96, 32, 0.5) 60%, transparent 100%);
 }
