@@ -1,40 +1,48 @@
-# AKSA Foundation Backend Implementation
+# AKSA Foundation - Official Website (2026 Redesign)
 
-This repository now includes a fully functional backend system for handling web forms using PHP and PHPMailer.
+A premium, modern, and highly responsive website for the **AKSA Foundation**, dedicated to empowering young minds with diverse disabilities through integrated learning and therapeutic sports.
 
-## 🚀 Getting Started
+## 🌟 Project Highlights
 
-### 1. Configure SMTP Password
-For security reasons, I have placed a placeholder in the `send-mail.php` file. You **must** update this with your actual email account password.
+- **Bento-Grid Design**: A state-of-the-art layout that beautifully organizes content, institutions, and galleries into a cohesive visual experience.
+- **Responsive Architecture**: Fully optimized for mobile, tablet, and desktop using **Bootstrap 5.3**.
+- **Interactive UI**: Featuring smooth scroll animations (Intersection Observer API) and dynamic carousels for the Sports Academy.
+- **Custom Assets**: Integrated high-quality SVG branding and optimized imagery (AVIF/JPG).
 
-- **File**: `send-mail.php`
-- **Line 33**: Change `'YourPasswordHere'` to your real password for `contact@aksafoundation.org`.
+## 🚀 Technical Stack
 
-```php
-$mail->Password   = 'YourPasswordHere'; // <--- Update this line
-```
+- **Frontend**: HTML5, Vanilla CSS3 (Custom Theme), JavaScript (ES6+).
+- **Libraries**:
+  - [Bootstrap 5.3.3](https://getbootstrap.com/) - Grid and components.
+  - [Boxicons](https://boxicons.com/) - Premium iconography.
+  - [Owl Carousel 2](https://owlcarousel2.github.io/OwlCarousel2/) - Responsive scrollers.
+  - [jQuery 3.7.1](https://jquery.com/) - Core utility for carousels.
+- **Backend**: PHP 8.x with [PHPMailer](https://github.com/PHPMailer/PHPMailer) for secure SMTP email processing.
 
-### 2. Supported Forms
-The system automatically detects and processes submissions from:
-- **Contact Us**: Sends general inquiries.
-- **Admissions**: Processes student data and handles **previous report attachments**.
-- **Volunteer / Internship**: Processes applications and handles **CV/Resume attachments**.
-- **Donation Receipt**: Processes 80G requests and handles **payment screenshot attachments**.
+## 📂 Key Sections
 
-### 3. Email Routing
-- **Sender**: `contact@aksafoundation.org`
-- **Recipient**: `keerthana.j.r.95@gmail.com`
-- **Reply-To**: Automatically sets the user's email address so you can reply directly to them.
+1.  **Home (`index.html`)**: Features the Foundation's mission, institution highlights, and integrated gallery.
+2.  **Institutions**:
+    *   **Learning Centre**: Specialized cognitive and speech therapy curriculum.
+    *   **Vocational Centre**: Job skills and independent living training for young adults.
+    *   **Sports Academy**: Adaptive swimming and therapeutic sports scroller.
+3.  **Events**: Highlighting community activities (Christmas, Diwali, Independence Day, etc.).
+4.  **Action Portals**:
+    *   **Admissions**: Comprehensive student intake form with file attachments.
+    *   **Volunteer/Internship**: Career and support application system with CV upload.
+    *   **Donate**: 80G tax benefit requests and payment verification.
 
-## 📂 Technical Structure
+## 🛠 Backend Configuration (SMTP)
 
-- `send-mail.php`: The master controller for all form logic.
-- `libs/PHPMailer/`: Contains the core manual installation of the PHPMailer library (required because Composer is not used).
+The website uses a unified `send-mail.php` handler. **Action skip required:**
+1. Open `send-mail.php`.
+2. Update the `$mail->Password` placeholder on **Line 33** with your actual application-specific password for `contact@aksafoundation.org`.
 
-## 🛠 Prerequisites
-- A web server running **PHP 5.5 or higher**.
-- The server must have **SSL/TLS support** enabled for SMTP connections (standard on most hosting providers).
+## 📦 Deployment Notes (GitHub Pages)
 
-## ⚠️ Important Notes
-- **File Uploads**: The server's `php.ini` must allow file uploads (usually enabled by default).
-- **Redirection**: Upon success/error, the user is redirected back to `index.html` with a status parameter. You can add visual alerts on the index page based on these parameters if desired.
+- **Case Sensitivity**: All image references have been normalized (lowercase `h*.jpg`) to ensure compatibility with GitHub's case-sensitive hosting.
+- **Path Resolution**: Standardized relative paths (removed leading `./`) for cross-browser and cross-server reliability.
+
+---
+
+*Redesigned and Developed with ❤️ for AKSA Foundation.*
