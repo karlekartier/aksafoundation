@@ -182,27 +182,41 @@
     .navbar .container-fluid {
         padding-left: 0.75rem !important;
         padding-right: 0.75rem !important;
-        flex-wrap: nowrap !important; /* Force same line */
+        display: flex !important;
+        flex-wrap: wrap !important; /* Allow collapse to wrap to next line */
+        align-items: center !important;
+        justify-content: space-between !important;
     }
 
     .navbar-brand {
         margin-right: 0 !important;
         gap: 0.35rem !important;
-        flex-shrink: 1 !important;
+        display: flex !important;
+        align-items: center !important;
+        flex: 1 !important; /* Take remaining space */
         min-width: 0 !important;
     }
 
     .navbar-logo-spin, .navbar-brand-img {
-        height: 28px !important; /* Scale way down for tiny screens */
+        height: 28px !important;
         width: auto !important;
     }
 
     .navbar-toggler {
         padding: 0.2rem 0.4rem !important;
-        margin-left: 0.25rem !important;
+        flex-shrink: 0 !important;
     }
 
     .navbar-toggler i {
         font-size: 1.4rem !important;
+    }
+
+    /* Force the collapse menu to its own row below the brand */
+    .navbar-collapse {
+        flex-basis: 100% !important;
+        order: 3 !important;
+        background: white !important;
+        padding-top: 1rem !important;
+        z-index: 1000 !important;
     }
 }
