@@ -27,9 +27,21 @@
     <meta name="geo.placename" content="Chennai" />
     <meta name="geo.position" content="13.0784;80.2289" />
     <meta name="ICBM" content="13.0784, 80.2289" />
-    <!-- Google Fonts (Lexend body, Figtree heading) -->
+    <!-- Connectivity Optimization -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://unpkg.com">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://unpkg.com">
+
+    <!-- Preload Critical Assets -->
+    <link rel="preload" as="image" href="assets/Aksa logo/Aksa icon.svg">
+
+    <!-- Fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&family=Lexend:wght@300;400;500;600&display=swap"
         rel="stylesheet">
@@ -165,13 +177,13 @@
                 </div>
             </div>
             <div class="owl-carousel learning-scroller">
-                <div class="item px-2"><img src="assets/images/vocation/v1.JPG" alt="Vocational Training 1"></div>
-                <div class="item px-2"><img src="assets/images/vocation/v2.JPG" alt="Vocational Training 2"></div>
-                <div class="item px-2"><img src="assets/images/vocation/v3.JPG" alt="Vocational Training 3"></div>
-                <div class="item px-2"><img src="assets/images/vocation/v4.JPG" alt="Vocational Training 4"></div>
-                <div class="item px-2"><img src="assets/images/vocation/v5.JPG" alt="Vocational Training 5"></div>
-                <div class="item px-2"><img src="assets/images/vocation/v6.JPG" alt="Vocational Training 6"></div>
-                <div class="item px-2"><img src="assets/images/vocation/v7.JPG" alt="Vocational Training 7"></div>
+                <div class="item px-2"><img src="assets/images/vocation/v1.JPG" alt="Vocational Training 1" width="600" height="400" loading="lazy"></div>
+                <div class="item px-2"><img src="assets/images/vocation/v2.JPG" alt="Vocational Training 2" width="600" height="400" loading="lazy"></div>
+                <div class="item px-2"><img src="assets/images/vocation/v3.JPG" alt="Vocational Training 3" width="600" height="400" loading="lazy"></div>
+                <div class="item px-2"><img src="assets/images/vocation/v4.JPG" alt="Vocational Training 4" width="600" height="400" loading="lazy"></div>
+                <div class="item px-2"><img src="assets/images/vocation/v5.JPG" alt="Vocational Training 5" width="600" height="400" loading="lazy"></div>
+                <div class="item px-2"><img src="assets/images/vocation/v6.JPG" alt="Vocational Training 6" width="600" height="400" loading="lazy"></div>
+                <div class="item px-2"><img src="assets/images/vocation/v7.JPG" alt="Vocational Training 7" width="600" height="400" loading="lazy"></div>
             </div>
         </section>
         <section class="reveal py-lg-5">
@@ -401,15 +413,12 @@
             </div>
         </div>
     </footer>
-    <!-- Bootstrap 5.3 JS Bundle (includes Popper) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- jQuery (Required for Owl) -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <!-- Owl Carousel JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <!-- Custom Main JS -->
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/custom.js"></script>
+    <!-- Scripts Optimization -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/custom.js" defer></script>
 
     <button id="backToTop" class="back-to-top" title="Back to Top">
         <i class='bx bx-up-arrow-alt'></i>

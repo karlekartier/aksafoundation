@@ -176,3 +176,33 @@
         padding-bottom: 3rem !important;
     }
 }
+
+/* Extreme Mobile Fix (iPhone SE/5 - 320px) */
+@media (max-width: 576px) {
+    .navbar .container-fluid {
+        padding-left: 0.75rem !important;
+        padding-right: 0.75rem !important;
+        flex-wrap: nowrap !important; /* Force same line */
+    }
+
+    .navbar-brand {
+        margin-right: 0 !important;
+        gap: 0.35rem !important;
+        flex-shrink: 1 !important;
+        min-width: 0 !important;
+    }
+
+    .navbar-logo-spin, .navbar-brand-img {
+        height: 28px !important; /* Scale way down for tiny screens */
+        width: auto !important;
+    }
+
+    .navbar-toggler {
+        padding: 0.2rem 0.4rem !important;
+        margin-left: 0.25rem !important;
+    }
+
+    .navbar-toggler i {
+        font-size: 1.4rem !important;
+    }
+}
