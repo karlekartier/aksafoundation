@@ -27,7 +27,20 @@
       }, 300);
     }
 });
-    
+    /* Back to Top Button Logic */
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 300) {
+            $('#backToTop').addClass('show');
+        } else {
+            $('#backToTop').removeClass('show');
+        }
+    });
+
+    $('#backToTop').click(function() {
+        $('html, body').animate({scrollTop: 0}, 600);
+        return false;
+    });
+
   })(window.jQuery);
 
 

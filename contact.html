@@ -34,6 +34,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- Global Styles -->
     <link rel="stylesheet" href="assets/css/pages.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="assets/Aksa logo/Aksa icon.svg">
 </head>
@@ -146,8 +147,8 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating mb-4">
-                                        <textarea class="form-control" placeholder="Leave a message here" id="message"
-                                            name="message" style="height: 150px" required shadow-none></textarea>
+                                        <textarea class="form-control textarea-h-150" placeholder="Leave a message here" id="message"
+                                            name="message" required shadow-none></textarea>
                                         <label for="message"><i class='bx bx-message-detail me-2'></i>How can we help
                                             you?</label>
                                     </div>
@@ -234,13 +235,18 @@
                 <div class="col-lg-4 col-md-6">
                     <h5 class="text-white fw-bold mb-3">Contact Us</h5>
                     <ul class="list-unstyled d-flex flex-column gap-2 text-light text-opacity-75">
-                        <li class="d-flex align-items-center gap-2"><i class='bx bx-phone'></i> 9994846094</li>
-                        <li class="d-flex align-items-center gap-2"><i class='bx bxl-whatsapp'></i> 90429 75899</li>
-                        <li class="d-flex align-items-center gap-2"><i class='bx bx-envelope'></i>
-                            contact@aksafoundation.org</li>
+                        <li class="d-flex align-items-center gap-2">
+                            <i class='bx bx-phone'></i> 90429 75899
+                        </li>
+                        <li class="d-flex align-items-center gap-2">
+                            <i class='bx bxl-whatsapp'></i> 90429 75899
+                        </li>
+                        <li class="d-flex align-items-center gap-2">
+                            <i class='bx bx-envelope'></i> contact@aksafoundation.org
+                        </li>
                         <li class="d-flex align-items-start gap-2 mt-2">
                             <i class='bx bx-map mt-1'></i>
-                            <span>No:15, 6th cross street, Shenoy Nagar, Chennai-600030</span>
+                            <span class="line-height-1-6">New no:7, old no:4, Gandhi Rd, C Block, Shenoy Nagar, Chennai, Tamil Nadu 600030.</span>
                         </li>
                     </ul>
                 </div>
@@ -277,7 +283,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <!-- Custom Main JS -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/custom.js"></script>
 
+    <button id="backToTop" class="back-to-top" title="Back to Top">
+        <i class='bx bx-up-arrow-alt'></i>
+    </button>
 </body>
 
 </html>

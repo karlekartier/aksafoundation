@@ -126,7 +126,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .bento-card img {
     margin-bottom: 1.5rem;
-    height: 200px;
 }
 
 .hero-carousel-img {
@@ -236,36 +235,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .brand-text {
     letter-spacing: -0.5px;
-}
-
-/* ---------------------------------
-   BACK TO TOP BUTTON
------------------------------------*/
-#backToTop {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 3.5rem;
-    height: 3.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 999;
-    font-size: 1.5rem;
-    transition: all 0.4s ease;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(20px);
-}
-
-#backToTop.show {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
-
-#backToTop:hover {
-    transform: translateY(-5px);
 }
 
 /* ---------------------------------

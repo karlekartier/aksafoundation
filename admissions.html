@@ -34,6 +34,7 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- Global Styles -->
     <link rel="stylesheet" href="assets/css/pages.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="assets/Aksa logo/Aksa icon.svg">
 </head>
@@ -246,7 +247,7 @@
                         </div>
                         <div class="col-12">
                             <div class="form-floating mb-3">
-                                <textarea class="form-control" id="address" name="address" style="height: 100px"
+                                <textarea class="form-control textarea-h-100" id="address" name="address"
                                     placeholder="Address"></textarea>
                                 <label for="address"><i class='bx bx-map me-2'></i>Full Address</label>
                             </div>
@@ -258,8 +259,8 @@
                         </div>
                         <div class="col-12">
                             <div class="form-floating mb-3">
-                                <textarea class="form-control" id="medical_history" name="medical_history"
-                                    style="height: 100px" placeholder="Medical History"></textarea>
+                                <textarea class="form-control textarea-h-100" id="medical_history" name="medical_history"
+                                    placeholder="Medical History"></textarea>
                                 <label for="medical_history"><i class='bx bx-history me-2'></i>Birth and Medical History
                                     (In brief)</label>
                             </div>
@@ -289,7 +290,7 @@
                         </div>
                         <div class="col-12">
                             <div class="form-floating mb-3">
-                                <textarea class="form-control" id="reasons" name="reasons" style="height: 100px"
+                                <textarea class="form-control textarea-h-100" id="reasons" name="reasons"
                                     placeholder="Reasons"></textarea>
                                 <label for="reasons"><i class='bx bx-help-circle me-2'></i>Reasons for Approaching AKSA
                                     & Referred By</label>
@@ -350,13 +351,18 @@
                 <div class="col-lg-4 col-md-6">
                     <h5 class="text-white fw-bold mb-3">Contact Us</h5>
                     <ul class="list-unstyled d-flex flex-column gap-2 text-light text-opacity-75">
-                        <li class="d-flex align-items-center gap-2"><i class='bx bx-phone'></i> 9994846094</li>
-                        <li class="d-flex align-items-center gap-2"><i class='bx bxl-whatsapp'></i> 90429 75899</li>
-                        <li class="d-flex align-items-center gap-2"><i class='bx bx-envelope'></i>
-                            contact@aksafoundation.org</li>
+                        <li class="d-flex align-items-center gap-2">
+                            <i class='bx bx-phone'></i> 90429 75899
+                        </li>
+                        <li class="d-flex align-items-center gap-2">
+                            <i class='bx bxl-whatsapp'></i> 90429 75899
+                        </li>
+                        <li class="d-flex align-items-center gap-2">
+                            <i class='bx bx-envelope'></i> contact@aksafoundation.org
+                        </li>
                         <li class="d-flex align-items-start gap-2 mt-2">
                             <i class='bx bx-map mt-1'></i>
-                            <span>No:15, 6th cross street, Shenoy Nagar, Chennai-600030</span>
+                            <span class="line-height-1-6">New no:7, old no:4, Gandhi Rd, C Block, Shenoy Nagar, Chennai, Tamil Nadu 600030.</span>
                         </li>
                     </ul>
                 </div>
@@ -394,7 +400,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <!-- Custom Main JS -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/custom.js"></script>
 
+    <button id="backToTop" class="back-to-top" title="Back to Top">
+        <i class='bx bx-up-arrow-alt'></i>
+    </button>
 </body>
 
 </html>
