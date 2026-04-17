@@ -4,10 +4,11 @@ A premium, modern, and highly responsive website for the **AKSA Foundation**, de
 
 ## 🌟 Project Highlights
 
-- **Bento-Grid Design**: A state-of-the-art layout that beautifully organizes content, institutions, and galleries into a cohesive visual experience.
+- **Bento-Grid Design**: A state-of-the-art layout that beautifully organizes content, institutions, and galleries into a cohesive visual experience. "Exact design" match performed for maximum aesthetic impact.
+- **Typography & Branding**: Utilizes **DM Sans** globally to mirror the original proprietary web designs for an authentic look, along with perfectly proportioned dynamic navbar SVG branding. 
 - **Responsive Architecture**: Fully optimized for mobile, tablet, and desktop using **Bootstrap 5.3**.
 - **Interactive UI**: Featuring smooth scroll animations (Intersection Observer API) and dynamic carousels for the Sports Academy.
-- **Custom Assets**: Integrated high-quality SVG branding and optimized imagery (AVIF/JPG).
+- **Custom Assets**: Integrated high-quality custom black-and-white line art iconography and optimized imagery (AVIF/JPG).
 
 ## 🚀 Technical Stack
 
