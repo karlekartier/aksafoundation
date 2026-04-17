@@ -10,7 +10,7 @@ html, body {
 }
 
 body {
-    font-family: 'Lexend', sans-serif;
+    font-family: 'Outfit', sans-serif;
     background-color: var(--primary-bg);
     color: #334155;
     -webkit-font-smoothing: antialiased;
@@ -18,7 +18,7 @@ body {
 
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Figtree', sans-serif;
+    font-family: 'Outfit', sans-serif;
     font-weight: 700;
     color: #0f172a;
 }
@@ -58,6 +58,15 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-backdrop-filter: blur(12px) saturate(180%);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+}
+
+.navbar-brand-text {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: #000000;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
 }
 
 .nav-link {
@@ -111,7 +120,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bento-card:hover {
-    transform: translateY(-8px) scale(1.01);
+    transform: translateY(-8px);
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
     background: #ffffff;
     border-color: var(--brand-color);
@@ -412,4 +421,39 @@ h1, h2, h3, h4, h5, h6 {
 
 .bento-card:hover .gallery-overlay {
     background: linear-gradient(to top, rgba(234, 96, 32, 0.9) 0%, rgba(234, 96, 32, 0.5) 60%, transparent 100%);
+}
+
+.brand-pill-btn {
+    background-color: #ea6020;
+    color: #ffffff;
+    border-radius: 50px;
+    padding: 10px 25px;
+    font-weight: 800;
+    border: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 0.95rem;
+    min-width: 220px;
+    text-transform: capitalize;
+}
+
+.brand-pill-btn:hover {
+    background-color: #cf541c;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(234, 96, 32, 0.3);
+}
+
+.bento-card-clean {
+    background: transparent;
+    padding: 0;
+    text-align: center;
+}
+
+.bento-icon-bw {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 1.5rem;
+    object-fit: contain;
 }

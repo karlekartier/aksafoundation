@@ -54,7 +54,7 @@
 }
 
 .card-title {
-    font-family: 'Figtree', sans-serif;
+    font-family: 'Outfit', sans-serif;
     font-weight: 700;
     font-size: 1.25rem;
     line-height: 1.4;
@@ -67,7 +67,7 @@
 }
 
 .card-text {
-    font-family: 'Lexend', sans-serif;
+    font-family: 'Outfit', sans-serif;
     font-size: 0.95rem;
     color: #636e72;
     line-height: 1.6;
@@ -524,7 +524,7 @@
     transform: translate(-50%, -50%);
     z-index: 0;
     user-select: none;
-    font-family: 'Figtree', sans-serif;
+    font-family: 'Outfit', sans-serif;
 }
 
 .error-content {
@@ -620,7 +620,7 @@
 }
 
 .form-section-title {
-    font-family: 'Figtree', sans-serif;
+    font-family: 'Outfit', sans-serif;
     font-weight: 700;
     color: #2d3436;
     margin-bottom: 25px;
