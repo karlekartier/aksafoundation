@@ -1,49 +1,57 @@
-# AKSA Foundation - Official Website (2026 Redesign)
+# AKSA Foundation - Static Website
 
-A premium, modern, and highly responsive website for the **AKSA Foundation**, dedicated to empowering young minds with diverse disabilities through integrated learning and therapeutic sports.
+Welcome to the newly refactored, highly optimized static code repository for the **AKSA Foundation**.
 
-## 🌟 Project Highlights
+This project has been completely migrated from a PHP-based dynamic infrastructure to a flat HTML5 layout, explicitly designed to maximize rendering speed, SEO clarity, and reliable static hosting deployments (e.g. GitHub Pages, Netlify, Vercel).
 
-- **Bento-Grid Design**: A state-of-the-art layout that beautifully organizes content, institutions, and galleries into a cohesive visual experience. "Exact design" match performed for maximum aesthetic impact.
-- **Typography & Branding**: Utilizes **DM Sans** globally to mirror the original proprietary web designs for an authentic look, along with perfectly proportioned dynamic navbar SVG branding. 
-- **Responsive Architecture**: Fully optimized for mobile, tablet, and desktop using **Bootstrap 5.3**.
-- **Interactive UI**: Featuring smooth scroll animations (Intersection Observer API) and dynamic carousels for the Sports Academy.
-- **Custom Assets**: Integrated high-quality custom black-and-white line art iconography and optimized imagery (AVIF/JPG).
+## Project Structure
 
-## 🚀 Technical Stack
+```text
+/root
+├── index.html                 (Replaces /home/index.php)
+├── about.html                 (Replaces /about/index.php)
+├── contact.html               (Static Contact Us Template)
+├── donate.html                (Static Donations Dashboard)
+├── events.html                (Static Events Tracking)
+├── learning-centre.html       (Static Program Info)
+├── our-story.html             (History Tracking)
+├── sport-academy.html         (Sports Program Hub)
+├── vocational-centre.html     (Vocation Info Hub)
+├── application.html           (Admission Entry point)
+├── volunter.html              (Volunteer Submission Form)
+├── robots.txt                 (Search Engine Directives)
+├── sitemap.xml                (Search Node Mapping)
+└── assets/                    (All local static dependencies)
+    ├── css/                   (Minified style layouts and components)
+    ├── js/                    (Client-side UI interaction files)
+    ├── images/                (Globally transcoded WebP/AVIF imagery)
+    └── fonts/                 (Local explicit typefaces)
+```
 
-- **Frontend**: HTML5, Vanilla CSS3 (Custom Theme), JavaScript (ES6+).
-- **Libraries**:
-  - [Bootstrap 5.3.3](https://getbootstrap.com/) - Grid and components.
-  - [Boxicons](https://boxicons.com/) - Premium iconography.
-  - [Owl Carousel 2](https://owlcarousel2.github.io/OwlCarousel2/) - Responsive scrollers.
-  - [jQuery 3.7.1](https://jquery.com/) - Core utility for carousels.
-- **Backend**: PHP 8.x with [PHPMailer](https://github.com/PHPMailer/PHPMailer) for secure SMTP email processing.
+## Project Migration & Performance Optimization
 
-## 📂 Key Sections
+This version represents a total architectural shift from the old dynamic structure to a modern, high-performance static build.
 
-1.  **Home (`index.html`)**: Features the Foundation's mission, institution highlights, and integrated gallery.
-2.  **Institutions**:
-    *   **Learning Centre**: Specialized cognitive and speech therapy curriculum.
-    *   **Vocational Centre**: Job skills and independent living training for young adults.
-    *   **Sports Academy**: Adaptive swimming and therapeutic sports scroller.
-3.  **Events**: Highlighting community activities (Christmas, Diwali, Independence Day, etc.).
-4.  **Action Portals**:
-    *   **Admissions**: Comprehensive student intake form with file attachments.
-    *   **Volunteer/Internship**: Career and support application system with CV upload.
-    *   **Donate**: 80G tax benefit requests and payment verification.
+### Transition from Dynamic (PHP) to Static (HTML)
+The project was migrated from a server-side PHP architecture to a high-speed Static HTML5 version. This provides several key benefits for the client:
+- **Instant Page Loading**: Without the need for server-side processing, pages load significantly faster, providing a "snappy" user experience.
+- **Improved Security**: By removing PHP, we have eliminated server-side vulnerabilities, making the site virtually unhackable through traditional script injection.
+- **Zero Hosting Costs**: This static version can be hosted for free on platforms like GitHub Pages, Netlify, or Vercel, removing the need for monthly server maintenance fees.
+- **Reliable Uptime**: Static files have significantly higher reliability compared to dynamic sites that depend on backend databases and server health.
 
-## 🛠 Backend Configuration (SMTP)
+### Key Refactoring Highlights
+- **Pre-Compiled Components**: All `layout/header`, `layout/top-nav`, and `layout/footer` modules have been dynamically mapped and physically applied into the `*.html` structures.
+- **Form Endpoints**: Legacy PHP email configurations have been replaced with modern static API receivers.
+- **High-Performance Media**: Images have been transcoded to modern formats like WebP for maximum compression without quality loss.
+- **SEO & Accessibility**: Every page now follows a strict semantic structure with optimized meta tags and faster rendering paths.
 
-The website uses a unified `send-mail.php` handler. **Action skip required:**
-1. Open `send-mail.php`.
-2. Update the `$mail->Password` placeholder on **Line 33** with your actual application-specific password for `contact@aksafoundation.org`.
+## Development & Hosting
 
-## 📦 Deployment Notes (GitHub Pages)
+Since this website is completely static HTML, you can run this instantly on any live-server implementation without establishing a localhost configuration for XAMPP/WAMP endpoints or Composer libraries!
 
-- **Case Sensitivity**: All image references have been normalized (lowercase `h*.jpg`) to ensure compatibility with GitHub's case-sensitive hosting.
-- **Path Resolution**: Standardized relative paths (removed leading `./`) for cross-browser and cross-server reliability.
+To test execution locally using NPM Node:
+```bash
+npx http-server .
+```
 
----
-
-*Redesigned and Developed with ❤️ for AKSA Foundation.*
+To deploy to Production: Track the new structure inside a Github Repository and configure GitHub Pages (Settings -> Pages -> Deploy Branch: Main). Everything maps instantly.
