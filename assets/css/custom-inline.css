@@ -66,16 +66,16 @@
           border-radius: 8px;
         }
 
-        input,
-        textarea,
-        button {
+        form input,
+        form textarea,
+        form button {
           width: 100%;
           padding: 8px;
           margin-bottom: 10px;
           box-sizing: border-box;
         }
 
-        button {
+        form button {
           background-color: #1a6aff;
           color: white;
           border: none;
@@ -83,7 +83,7 @@
           transition: background-color 0.3s ease;
         }
 
-        button:hover {
+        form button:hover {
           background-color: #155acb;
         }
 
@@ -92,8 +92,8 @@
             padding: 12px;
           }
 
-          input,
-          button {
+          form input,
+          form button {
             font-size: 14px;
           }
         }
@@ -151,7 +151,7 @@
       input[type="email"],
       input[type="tel"],
       input[type="file"],
-      button {
+      form button {
         width: 100%;
         padding: 10px;
         margin-bottom: 12px;
@@ -161,7 +161,7 @@
         font-size: 13px;
       }
 
-      button {
+      form button {
         background-color: rgb(26, 106, 255);
         color: white;
         cursor: pointer;
@@ -169,7 +169,7 @@
         transition: background 0.3s ease;
       }
 
-      button:hover {
+      form button:hover {
         background-color: rgb(26, 106, 255);
       }
 
@@ -178,8 +178,8 @@
           padding: 12px;
         }
 
-        input,
-        button {
+        form input,
+        form button {
           font-size: 14px;
         }
       }
@@ -282,7 +282,7 @@
       input[type="email"],
       input[type="tel"],
       input[type="file"],
-      button {
+      form button {
         width: 100%;
         padding: 10px;
         margin-bottom: 12px;
@@ -292,7 +292,7 @@
         font-size: 13px;
       }
 
-      button {
+      form button {
         background-color: rgb(26, 106, 255);
         color: white;
         cursor: pointer;
@@ -300,7 +300,7 @@
         transition: background 0.3s ease;
       }
 
-      button:hover {
+      form button:hover {
         background-color: rgb(26, 106, 255);
       }
 
@@ -309,8 +309,8 @@
           padding: 12px;
         }
 
-        input,
-        button {
+        form input,
+        form button {
           font-size: 14px;
         }
       }
@@ -354,43 +354,7 @@
   text-decoration: underline
 }
 
-  #hero-slide {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    max-height: 50vh;
-    /* Limits height to 50% of viewport height */
-  }
 
-  .carousel-image {
-    width: 100%;
-    height: 100%;
-    max-height: 400px;
-    /* Limits height to prevent stretching */
-    object-fit: cover;
-    /* Ensures no distortion while filling the space */
-    border-radius: 10px;
-    /* Optional: Rounded edges */
-  }
-
-  /* Mobile View - Ensure Full Video Visibility */
-  @media (max-width: 768px) {
-    #hero-slide {
-      max-height: none;
-      /* Remove height limit */
-    }
-
-    .carousel-image {
-      height: auto;
-      /* Allow video to maintain its natural aspect ratio */
-      max-height: 100%;
-      /* Ensure full visibility */
-      object-fit: contain;
-      /* Show full video without cropping */
-    }
-  }
 
   .responsive-image {
     width: 100%;
@@ -1373,16 +1337,16 @@
         border-radius: 8px;
       }
 
-      input,
-      textarea,
-      button {
+      form input,
+      form textarea,
+      form button {
         width: 100%;
         padding: 8px;
         margin-bottom: 10px;
         box-sizing: border-box;
       }
 
-      button {
+      form button {
         background-color: #1a6aff;
         color: white;
         border: none;
@@ -1390,7 +1354,7 @@
         transition: background-color 0.3s ease;
       }
 
-      button:hover {
+      form button:hover {
         background-color: #155acb;
       }
 
@@ -1399,8 +1363,8 @@
           padding: 12px;
         }
 
-        input,
-        button {
+        form input,
+        form button {
           font-size: 14px;
         }
       }
@@ -1437,3 +1401,4 @@
 .custom-inline-130 {
   text-decoration: underline
 }
+

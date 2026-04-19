@@ -133,6 +133,24 @@
         </ul>
       </div>
 
+      <script>
+        const toggleIcon = document.getElementById('toggleIcon');
+        const navbarCollapse = document.getElementById('navbarNav');
+
+        // Listen for Bootstrap collapse shown and hidden events
+        navbarCollapse.addEventListener('shown.bs.collapse', () => {
+          // Menu opened — show 'x' icon
+          toggleIcon.src = 'assets/images/icons/x.webp';
+          toggleIcon.alt = 'Close Menu';
+        });
+
+        navbarCollapse.addEventListener('hidden.bs.collapse', () => {
+          // Menu closed — show grid icon
+          toggleIcon.src = 'assets/images/home/grid.webp';
+          toggleIcon.alt = 'Open Menu';
+        });
+      </script>
+
 
       <!-- Menu Items -->
     </div>
